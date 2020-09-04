@@ -20,7 +20,7 @@ public class ShopUsedPage implements BasePage {
         visibilityHelper.waitForPresenceOf(By.cssSelector(LINKS_AREA_LOCATOR));
     }
 
-    @FindBy(how = How.CSS, using = "[data-test='homepageHeroPanelShopUsedButton']")
+    @FindBy(how = How.CSS, using = "[data-test='homepageHeroPanelShopUsedButto']")
     public WebElement shopUsedSearch;
 
 
