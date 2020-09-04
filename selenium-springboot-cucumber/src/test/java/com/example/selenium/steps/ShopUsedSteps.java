@@ -7,11 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class ShopUsedSteps {
 
     @Autowired
-    private ShopUsedPage shopUsedPage;
+    public ShopUsedPage shopUsedPage;
 
     @Given("I shop for used car")
     public void i_shop_for_used_car() {
-        shopUsedPage.shopUsedSearch.click();
+       shopUsedPage.shopUsedSearch.click();
     }
-
 }
