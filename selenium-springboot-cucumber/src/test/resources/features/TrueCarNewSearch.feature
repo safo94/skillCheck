@@ -3,7 +3,7 @@ Feature: Shop New Page Search Tests
 
   @models
   Scenario Outline: Verify car models
-    Given I  shop for new car
+    Given I shop for new car
     Then I verify there are 35 car makes
     And I select make "<make>"
     And I verify car models are "<models>"

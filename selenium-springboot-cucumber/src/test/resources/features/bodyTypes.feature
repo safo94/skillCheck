@@ -12,3 +12,5 @@ Feature: This feature is to validate body types
     Examples:
       | bodyTypes | numOfcars |
       | Sedans    | 27        |
+      | SUVs      | 32        |
+      | Trucks    | 8         |
