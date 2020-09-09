@@ -20,12 +20,33 @@ public class ShopNewPage implements BasePage {
     @FindBy(how = How.CSS, using = "[data-test='modelSearchBrand']")
     public List<WebElement> carMakes;
 
-    public List<String> getTextFromWebElement(){
+    public List<String> getTextFromWebElement() {
         List<String> textFromListWeb = new ArrayList<>();
         for (WebElement carModel : carModels) {
             textFromListWeb.add(carModel.getText().split("/n")[0]);
         }
         return textFromListWeb;
     }
+
+    @FindBy(how = How.CSS, using = "[data-test='modelSearchOptionBody']")
+    public WebElement bodyType;
+
+    @FindBy(how = How.CSS, using = "[data-test='modelSearchBodyType']")
+    private List<WebElement> bodyTypes;
+
+    public void chooseBodyType(String text) {
+        for (int i = 0; i < bodyTypes.size(); i++) {
+            if(bodyTypes.get(i).getText().equals(text)){
+                bodyTypes.get(i).click();
+                break;
+            }
+
+        }
+    }
+
+    @FindBy(how = How.CSS, using = "[data-qa='model-search-brand-new']")
+    public List<WebElement> numberOfCarsForTheGivenBodyType;
+
+
 
 }

@@ -1,13 +1,9 @@
-@test1
+@smoke_test
 Feature: Shop New Page Search Tests
 
-  Scenario: User can shop for a car
-    Given I shop for new car
-
-    #All car makes and models are case sensitive
   @models
   Scenario Outline: Verify car models
-    Given I shop for new car
+    Given I  shop for new car
     Then I verify there are 35 car makes
     And I select make "<make>"
     And I verify car models are "<models>"
@@ -19,6 +15,5 @@ Feature: Shop New Page Search Tests
       | Kia   | Forte,K5                 |
 
 
-    # BREAK UNTIL 11:15 AM
 
 

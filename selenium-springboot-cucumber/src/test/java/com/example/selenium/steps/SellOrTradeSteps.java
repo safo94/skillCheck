@@ -5,7 +5,6 @@ import io.cucumber.java.en.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class SellOrTradeSteps {
-
     @Autowired
     private SellOrTradePage sellOrTradePage;
 

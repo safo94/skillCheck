@@ -1,4 +1,4 @@
-@used
+@smoke_test
 Feature: Shop for Used cars
 
   Scenario: User can shop for a car

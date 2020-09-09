@@ -46,5 +46,25 @@ public class ShopNewSteps {
         }
 
     }
+    @Then("I click on Body Type")
+    public void iClickOnBodyType() {
+        shopNewPage.bodyType.click();
+    }
+
+    @And("I choose body type {string}")
+    public void iChooseBodyType(String bodyType) {
+        shopNewPage.chooseBodyType(bodyType);
+    }
+
+    @Then("I should see {int} cars")
+    public void i_should_see_cars(int numOfCars) {
+        int actualNumberOfCars = shopNewPage.numberOfCarsForTheGivenBodyType.size();
+        Assert.assertEquals(numOfCars, actualNumberOfCars);
+    }
+
+
+
+
+
 
 }
