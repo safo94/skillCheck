@@ -6,9 +6,8 @@ function fn() {
   }
   var config = { // base config JSON
     baseUrl: karate.properties['baseUrl'] || 'http://ec2-3-131-131-155.us-east-2.compute.amazonaws.com:3000',
-    username: karate.properties['username'] || '',
-    password: karate.properties['pwd'] || ''
-    
+    someVariable: karate.properties['someVariable'] || 'Some variable value'
+
   };
   if (env == 'stage') {
     // over-ride only those that need to be
