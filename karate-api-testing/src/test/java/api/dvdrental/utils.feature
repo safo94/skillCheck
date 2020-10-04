@@ -4,7 +4,7 @@ Feature: Utils
     * configure report = { showLog: true, showAllSteps: false }
     * def currDate =
       """
-      function(days){
+      function(){
       	var LocalDate = Java.type('java.time.LocalDate');
       	var ld = LocalDate.now();
       	return ld.toString();
@@ -16,6 +16,15 @@ Feature: Utils
       	var LocalDate = Java.type('java.time.LocalDate');
       	var ld = LocalDate.now();
       	return ld.minusDays(days);
+      }
+      """
+
+    * def randomNumber =
+      """
+      function(boundary){
+      	var Random = Java.type('java.util.Random');
+        var random = new Random();
+      	return random.nextInt(boundary);
       }
       """
     # use jdbc to validate

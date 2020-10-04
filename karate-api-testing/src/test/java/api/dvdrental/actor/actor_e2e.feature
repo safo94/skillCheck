@@ -5,7 +5,6 @@ Feature: Actors
     * configure report = { showLog: true, showAllSteps: false }
     * def jsonRequest = read('classpath:api/dvdrental/jsonFiles/actor.json')
 
-
   @actore2e
   Scenario: CRUD
     #Create actor
