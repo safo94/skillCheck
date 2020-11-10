@@ -1,0 +1,60 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-10T20:04:00.470Z",
+        "line": 5,
+        "name": "Search for a car at cars.com",
+        "description": "",
+        "id": "shopping-for-a-new-car;search-for-a-car-at-cars.com",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8444000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Navigate to cars.com",
+            "match": {
+              "location": "stepDefs.StepDefinitions.navigate_to_cars_com()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1968000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Input credentials",
+            "match": {
+              "location": "stepDefs.StepDefinitions.input_credentials()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 119000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click search",
+            "match": {
+              "location": "stepDefs.StepDefinitions.click_search()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Shopping for a new car",
+    "description": "",
+    "id": "shopping-for-a-new-car",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Cucumber.feature",
+    "tags": []
+  }
+]
