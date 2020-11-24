@@ -3,7 +3,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2020-11-10T20:04:00.470Z",
+        "start_timestamp": "2020-11-21T03:49:37.842Z",
         "line": 5,
         "name": "Search for a car at cars.com",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8444000000,
+              "duration": 8456000000,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 1968000000,
+              "duration": 1664000000,
               "status": "passed"
             },
             "line": 7,
@@ -37,7 +37,6 @@
           },
           {
             "result": {
-              "duration": 119000000,
               "status": "passed"
             },
             "line": 8,

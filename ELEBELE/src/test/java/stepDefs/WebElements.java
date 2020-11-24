@@ -1,6 +1,7 @@
 package stepDefs;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.maven.model.Model;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -11,11 +12,13 @@ import java.util.List;
 public class WebElements {
 
 
-    @FindBy(how = How.CSS, using = "[class='global-nav__parent'] [data-linkname='header-buy']")
-    public WebElement carsForSale;
 
-    @FindBy(how = How.NAME, using = "stockType")
+
+    @FindBy(how = How.CSS, using ="[aria-label='Select a stock type']")
     public WebElement carCondition;
+
+    @FindBy(how = How.CSS, using = "[target='_blank']")
+    public WebElement ok;
 
     @FindBy(how = How.CSS, using = "[aria-label='Select a make']")
     public WebElement carMake;
@@ -35,5 +38,19 @@ public class WebElements {
     @FindBy(how = How.CSS, using = "[value='Search']")
     public WebElement search;
 
+    @FindBy(how = How.CSS, using = "[href='https://saucelabs.com/']")
+    public WebElement newTab;
 
+    @FindBy(how = How.CSS, using = "[class='d-inline-block align-self-center align-middle _yak6vp']")
+    public List <WebElement> MakeTrueCar;
+
+
+
+
+
+
+
+
+    @FindBy(how = How.CSS, using = "[data-test='homepageHeroPanelShopNewButton']")
+    public WebElement ShopNew;
 }
