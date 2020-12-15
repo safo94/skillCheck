@@ -14,9 +14,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
 import java.util.List;
 
 public class BaseSteps {
+    public void Clo(){
+        Object
+
+    }
 
     /**
      * Logger
@@ -41,9 +46,7 @@ public class BaseSteps {
         final WebDriver driver = hooks.getDriver();
 
         // Intialize all page elements
-        pages.stream().forEach(p -> {
-            initElements(driver, p);
-        });
+        pages.stream().forEach(p -> { initElements(driver, p);  });
         // --
     }
 

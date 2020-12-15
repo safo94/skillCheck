@@ -5,7 +5,7 @@ function fn() {
     env = 'dev'; // a custom 'intelligent' default
   }
   var config = { // base config JSON
-    baseUrl: karate.properties['baseUrl'] || 'http://ec2-3-131-131-155.us-east-2.compute.amazonaws.com:3000',
+    baseUrl: karate.properties['baseUrl'] || 'http://ec2-3-14-168-74.us-east-2.compute.amazonaws.com:3000',
     someVariable: karate.properties['someVariable'] || 'Some variable value'
 
   };
